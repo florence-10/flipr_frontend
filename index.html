@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Welcome, {{ session['username'] }}</h1>
@@ -14,6 +15,6 @@
             <li>{{ instance.name }}</li>
         {% endfor %}
     </ul>
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <a href="./login.html">Logout</a>
 </body>
 </html>
